@@ -55,6 +55,38 @@ Breaking a log of a natural tree puts it back and removes the tree's **top** log
 |---|---|
 | Skeleton, stray, bogged, parched | **−30% max health** (skeleton 20 → 14). Ranged units should be squishier. Wither skeletons unchanged |
 
+## Also on the server
+
+The Artemis server runs this pack alongside the ones below. They all run on the server, so players don't install anything. Exact versions live in the server's compose file (`artemis` repo), not here.
+
+### Vanilla Tweaks crafting tweaks
+
+From [Vanilla Tweaks](https://vanillatweaks.net/):
+
+| Group | Tweaks |
+|---|---|
+| Quality of life | Powder to Glass, Straight to Shapeless, Universal Dyeing, Sandstone Dyeing, Copper Powered Rails, Back to Blocks |
+| More blocks | More Bricks, More Stairs, More Bark, More Trapdoors |
+| Craftables | Craftable Coral Blocks 3x3 |
+| Unpackables | Unpackable Wool, Unpackable Nether Wart, Unpackable Ice |
+
+### World generation
+
+Only chunks generated after these were added have them.
+
+| Pack | Adds |
+|---|---|
+| [Geophilic](https://modrinth.com/project/geophilic) | More detailed vanilla biomes |
+| [Dungeons and Taverns](https://modrinth.com/project/dungeons-and-taverns) | New structures to find |
+
+### Mods (Fabric)
+
+| Mod | Why |
+|---|---|
+| Lithium, FerriteCore, Krypton | Server performance |
+| Geyser, Floodgate | Let Bedrock players join |
+| Plan | Player stats web page |
+
 ## Build
 
 ```sh
@@ -62,7 +94,7 @@ Breaking a log of a natural tree puts it back and removes the tree's **top** log
 ./build.sh --install /path/to/server/world  # also copies the datapack into world/datapacks/
 ```
 
-The build checks every `.json` / `.mcmeta` file with `jq` first. The game itself skips broken files without saying so. `dist/` is rebuilt every run and git-ignored — edit `datapack/` and `resourcepack/`, never `dist/`.
+The build checks every `.json` / `.mcmeta` file with `jq` first. The game itself skips broken files without saying so. `dist/` is rebuilt every run and committed, because the server downloads the datapack zip from a pinned commit — edit `datapack/` and `resourcepack/`, never `dist/`, and commit the rebuilt `dist/` with your change.
 
 ## Install
 
