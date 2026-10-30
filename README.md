@@ -135,7 +135,7 @@ Each piece of **leather armor** you wear (dyed/enchanted counts) makes you harde
 
 - Sneak speed stacks with Swift Sneak, capped at walking speed. It doesn't reach Bedrock players, because Geyser doesn't translate it.
 - Mobs always notice you within 2 blocks. A mob you hit, or one already chasing you, isn't affected.
-- Wardens, Creakings, Silverfish and bosses aren't affected. Neutral mobs like wolves and iron golems aren't either.
+- Wardens, Creakings, Silverfish, the Wither and the Ender Dragon aren't affected. Neutral mobs like wolves and iron golems aren't either.
 - Armor is stamped the first time it's worn, which also adds a line to its tooltip. Stamped armor keeps these effects if this pack is removed.
 
 ## Experimental pack
@@ -183,7 +183,7 @@ Only chunks generated after these were added have them.
 ./build.sh --install /path/to/test/world experimental # Experimental must be named to be installed
 ```
 
-The build checks every `.json` / `.mcmeta` file with `jq` first. That only catches malformed JSON: in 26.3 a recipe or advancement with bad contents stops the server from starting (recover with `--safeMode`), and a broken function just logs an error and is skipped. `dist/` is rebuilt every run and committed (except the Experimental zip), because the server downloads the pack zips from a pinned commit — edit `datapacks/` and `resourcepack/`, never `dist/`, and commit the rebuilt `dist/` with your change.
+The build checks every `.json` / `.mcmeta` file with `jq` first. That only catches malformed JSON: in 26.3 a recipe or advancement with bad contents stops the server from starting (recover with `--safeMode`), and a broken function just logs an error and is skipped. `dist/` is rebuilt every run and committed (except the Experimental zip), because the server downloads the pack zips from a pinned commit — edit `datapacks/` and `resourcepack/`, never `dist/`, and commit the rebuilt `dist/` with your change. `resourcepack/` is an empty placeholder for now, so nothing needs that zip.
 
 ## Install
 
