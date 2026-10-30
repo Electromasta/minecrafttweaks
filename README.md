@@ -32,22 +32,7 @@ Vanilla+ Minecraft datapacks for **Java Edition 26.3**. Each pack works on its o
 
 ### Player-kill-only drops
 
-Valuable drops need a player to get the kill, so fully automatic farms stop producing them. Animal farms and low-value drops are left alone.
-
-| Mob | Only drops on a player kill |
-|---|---|
-| Iron golem | Iron ingots |
-| Zombified piglin | Gold nuggets |
-| Evoker | Totem of undying |
-| Pillager (captain) | Ominous bottle |
-| Witch | Redstone, glowstone dust, gunpowder |
-| Guardian | Prismarine shards and crystals |
-| Ghast | Ghast tears, gunpowder |
-| Creeper | Gunpowder |
-| Enderman | Ender pearls |
-| Shulker | Shulker shells |
-| Slime | Slime balls (frog-eaten slimes still drop them) |
-| Magma cube | Magma cream (froglights still work) |
+Valuable drops need a player to get the kill, so fully automatic farms stop producing them.   Small automatic farms are fine, big ones cause lag for other servers.
 
 ### Block drops
 
@@ -87,9 +72,22 @@ Breaking a log of a natural tree puts it back and removes the tree's **top** log
 |---|---|---|
 | Leather helmet / chestplate / leggings / boots | 55 / 80 / 75 / 65 | **132 / 192 / 180 / 156** |
 | Gold helmet / chestplate / leggings / boots | 77 / 112 / 105 / 91 | **220 / 320 / 300 / 260** |
-| Gold sword, pickaxe, axe, shovel, hoe, spear | 32 | **140** (stone is 131) |
+| Gold sword, pickaxe, axe, shovel, hoe, spear | 32 | **140** |
 
-Crafted items have this from the start. Anything else, like loot, trades, mob drops and items players already own, updates as soon as it's in a player's inventory. Enchantments, dye and existing wear carry over. Armor still in a chest or worn by a mob stays vanilla until picked up. Horse armor is unchanged.
+### Hushed leather
+
+Each piece of **leather armor** you wear (dyed/enchanted counts) makes you harder to notice and quicker on your feet. Pieces add up, so there's no full-set requirement:
+
+| Pieces | Mob notice range | Sneaking | Zombie notices you sneaking at | Sneak speed |
+|---|---|---|---|---|
+| 0 | 1× | 0.8× | 28 blocks | 0.3 |
+| 1 | 0.8× | 0.64× | 22 blocks | 0.375 |
+| 2 | 0.64× | 0.51× | 18 blocks | 0.45 |
+| 3 | 0.51× | 0.41× | 14 blocks | 0.525 |
+| 4 | 0.41× | 0.33× | 11.5 blocks | 0.6 (like Swift Sneak II) |
+
+- Sneak speed stacks with Swift Sneak, capped at walking speed. It doesn't reach Bedrock players, because Geyser doesn't translate it.
+- Wardens, Creakings, Silverfish, the Wither and the Ender Dragon aren't affected. Neutral mobs like wolves and iron golems aren't either.
 
 ### Direhide armor
 
@@ -112,39 +110,10 @@ Data packs can't add new items, so Dire Hide is a cow spawn egg with its mob dat
 
 ### Crimson and warped gear
 
-Stronger bows and shields made from Nether wood. Any stem or hyphae of the right type works, stripped or not. The recipes unlock when you first pick some up.
-
 | Item | Recipe | Durability | Vanilla |
 |---|---|---|---|
 | Crimson / Warped Bow | Bow shape: 3 stems, 3 string | **768** | 384 |
 | Crimson / Warped Shield | Shield shape: 6 stems, 1 iron ingot | **1008** | 336 |
-
-Damage and enchantability are the same as a normal bow. Shields repair at an anvil with stems of their own type, not planks. They look like vanilla bows and shields, so the name is the only visual difference.
-
-### Hushed leather
-
-Each piece of **leather armor** you wear (dyed/enchanted counts) makes you harder to notice and quicker on your feet. Pieces add up, so there's no full-set requirement:
-
-| Pieces | Mob notice range | Sneaking | Zombie notices you sneaking at | Sneak speed |
-|---|---|---|---|---|
-| 0 | 1× | 0.8× | 28 blocks | 0.3 |
-| 1 | 0.8× | 0.64× | 22 blocks | 0.375 |
-| 2 | 0.64× | 0.51× | 18 blocks | 0.45 |
-| 3 | 0.51× | 0.41× | 14 blocks | 0.525 |
-| 4 | 0.41× | 0.33× | 11.5 blocks | 0.6 (like Swift Sneak II) |
-
-- Sneak speed stacks with Swift Sneak, capped at walking speed. It doesn't reach Bedrock players, because Geyser doesn't translate it.
-- Mobs always notice you within 2 blocks. A mob you hit, or one already chasing you, isn't affected.
-- Wardens, Creakings, Silverfish, the Wither and the Ender Dragon aren't affected. Neutral mobs like wolves and iron golems aren't either.
-- Armor is stamped the first time it's worn, which also adds a line to its tooltip. Stamped armor keeps these effects if this pack is removed.
-
-## Experimental pack
-
-For trying things out locally. Its zip is ignored by git and `--install` skips it unless you name it. Give its functions their own paths (e.g. `minecrafttweaks:experimental/...`) so they never replace another pack's files.
-
-## Also on the server
-
-The Artemis server runs these packs (except Experimental) alongside the ones below. They all run on the server, so players don't install anything. Exact versions live in the server's compose file (`artemis` repo), not here.
 
 ### Vanilla Tweaks crafting tweaks
 
