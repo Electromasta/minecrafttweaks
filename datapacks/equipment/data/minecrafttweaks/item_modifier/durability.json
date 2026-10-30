@@ -1,0 +1,215 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:leather_helmet",
+        "components": {
+          "minecraft:max_damage": 55
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 132
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:leather_chestplate",
+        "components": {
+          "minecraft:max_damage": 80
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 192
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:leather_leggings",
+        "components": {
+          "minecraft:max_damage": 75
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 180
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:leather_boots",
+        "components": {
+          "minecraft:max_damage": 65
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 156
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_helmet",
+        "components": {
+          "minecraft:max_damage": 77
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 220
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_chestplate",
+        "components": {
+          "minecraft:max_damage": 112
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 320
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_leggings",
+        "components": {
+          "minecraft:max_damage": 105
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 300
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_boots",
+        "components": {
+          "minecraft:max_damage": 91
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 260
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_sword",
+        "components": {
+          "minecraft:max_damage": 32
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_pickaxe",
+        "components": {
+          "minecraft:max_damage": 32
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_axe",
+        "components": {
+          "minecraft:max_damage": 32
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_shovel",
+        "components": {
+          "minecraft:max_damage": 32
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_hoe",
+        "components": {
+          "minecraft:max_damage": 32
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:golden_spear",
+        "components": {
+          "minecraft:max_damage": 32
+        }
+      },
+      "on_pass": {
+        "type": "minecraft:set_components",
+        "components": {
+          "minecraft:max_damage": 140
+        }
+      }
+    }
+  ]
+}

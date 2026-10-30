@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 16,
+              "max": 32
+            }
+          },
+          "name": "minecraft:bone_block"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

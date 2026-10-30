@@ -26,6 +26,8 @@ Vanilla+ Minecraft datapacks for **Java Edition 26.3**. Each pack works on its o
 | Wither skeleton | skull 2.5% | **skull 5%** (+1%/Looting) | Beacons and Withers are a long grind |
 | Spider | — | **+ cobweb 2.5%** (player kill, +1%/Looting) | |
 | Husk | — | **+ 0–2 sand** | Renewable sand |
+| Ender Dragon | nothing | **16–32 bone blocks** beside the exit portal (player kill, every kill) | Big mobs leave big bones |
+| Giant | nothing | **8–16 bone blocks** | Giants only exist if summoned |
 | Zombie-types (9 mobs) | rotten flesh | rotten flesh that is **compostable** (50%/item) | Gives flesh a use |
 
 ### Player-kill-only drops
@@ -38,7 +40,6 @@ Valuable drops need a player to get the kill, so fully automatic farms stop prod
 | Zombified piglin | Gold nuggets |
 | Evoker | Totem of undying |
 | Pillager (captain) | Ominous bottle |
-| Ravager | Saddle |
 | Witch | Redstone, glowstone dust, gunpowder |
 | Guardian | Prismarine shards and crystals |
 | Ghast | Ghast tears, gunpowder |
@@ -80,15 +81,62 @@ Breaking a log of a natural tree puts it back and removes the tree's **top** log
 | Iron chains in the armor shapes (5 / 8 / 7 / 4) | **Chainmail** helmet / chestplate / leggings / boots |
 | Iron chain (vanilla recipe) | now gives **2 chains** instead of 1 |
 
-### Leather stealth set bonus
+### Durability
 
-Sneaking in **full leather armor** (dyed/enchanted counts):
+| Item | Vanilla | Now |
+|---|---|---|
+| Leather helmet / chestplate / leggings / boots | 55 / 80 / 75 / 65 | **132 / 192 / 180 / 156** |
+| Gold helmet / chestplate / leggings / boots | 77 / 112 / 105 / 91 | **220 / 320 / 300 / 260** |
+| Gold sword, pickaxe, axe, shovel, hoe, spear | 32 | **140** (stone is 131) |
 
-- **Invisible** — with armor on, mobs notice you at ~0.56× range instead of 0.8× for normal sneaking (a zombie at ~20 blocks instead of 28). Other players see floating armor.
-- **Hidden from the locator bar.**
-- **Sneak speed 0.6** (like Swift Sneak II); stacks with Swift Sneak, capped at walking speed.
+Crafted items have this from the start. Anything else, like loot, trades, mob drops and items players already own, updates as soon as it's in a player's inventory. Enchantments, dye and existing wear carry over. Armor still in a chest or worn by a mob stays vanilla until picked up. Horse armor is unchanged.
 
-Before removing this pack, run `/execute as @a[tag=mt_leather_stealth] run function minecrafttweaks:leather_stealth/off`, or anyone sneaking in full leather keeps the speed and locator bar changes.
+### Direhide armor
+
+A tougher leather set made from **Dire Hide**, which hoglins and ravagers drop on a player kill (0–2, plus Looting). It replaces the hoglin's vanilla leather drop. Crafted in the normal armor shapes, 24 hides for a full set. It's leather armor underneath, so it can be dyed and trimmed, gets Hushed, and stops freezing.
+
+| Piece | Armor | Toughness | Durability |
+|---|---|---|---|
+| Helmet | 2 | 1 | 220 |
+| Chestplate | 6 | 1 | 320 |
+| Leggings | 5 | 1 | 300 |
+| Boots | 2 | 1 | 260 |
+| **Set** | **15** | **4** | **1100** |
+
+Data packs can't add new items, so Dire Hide is a cow spawn egg with its mob data removed and a leather icon. It can't spawn anything. Recipes can only check the base item, so a real cow spawn egg would also craft this armor, but those can't be obtained in survival.
+
+- **Recipes:** they unlock in the recipe book when you get your first Dire Hide. The book shows a cow egg as the ingredient, because recipes can't display custom items.
+- **Repairing:** Dire Hide repairs Direhide armor at an anvil. Plain leather doesn't.
+- **No crafting grid repair:** this pack removes the recipe that combines two damaged items in a crafting grid, for all items, because it would turn Direhide into plain leather armor. Use an anvil instead.
+- **Drops are in this pack:** the hoglin and ravager loot tables live here so the hide comes with the armor. That includes the ravager's saddle needing a player kill, so without this pack ravagers drop vanilla saddles.
+
+### Crimson and warped gear
+
+Stronger bows and shields made from Nether wood. Any stem or hyphae of the right type works, stripped or not. The recipes unlock when you first pick some up.
+
+| Item | Recipe | Durability | Vanilla |
+|---|---|---|---|
+| Crimson / Warped Bow | Bow shape: 3 stems, 3 string | **768** | 384 |
+| Crimson / Warped Shield | Shield shape: 6 stems, 1 iron ingot | **1008** | 336 |
+
+Damage and enchantability are the same as a normal bow. Shields repair at an anvil with stems of their own type, not planks. They look like vanilla bows and shields, so the name is the only visual difference.
+
+### Hushed leather
+
+Each piece of **leather armor** you wear (dyed/enchanted counts) makes you harder to notice and quicker on your feet. Pieces add up, so there's no full-set requirement:
+
+| Pieces | Mob notice range | Sneaking | Zombie notices you sneaking at | Sneak speed |
+|---|---|---|---|---|
+| 0 | 1× | 0.8× | 28 blocks | 0.3 |
+| 1 | 0.8× | 0.64× | 22 blocks | 0.375 |
+| 2 | 0.64× | 0.51× | 18 blocks | 0.45 |
+| 3 | 0.51× | 0.41× | 14 blocks | 0.525 |
+| 4 | 0.41× | 0.33× | 11.5 blocks | 0.6 (like Swift Sneak II) |
+
+- Sneak speed stacks with Swift Sneak, capped at walking speed. It doesn't reach Bedrock players, because Geyser doesn't translate it.
+- Mobs always notice you within 2 blocks. A mob you hit, or one already chasing you, isn't affected.
+- Wardens, Creakings, Silverfish and bosses aren't affected. Neutral mobs like wolves and iron golems aren't either.
+- Armor is stamped the first time it's worn, which also adds a line to its tooltip. Stamped armor keeps these effects if this pack is removed.
 
 ## Experimental pack
 
@@ -135,7 +183,7 @@ Only chunks generated after these were added have them.
 ./build.sh --install /path/to/test/world experimental # Experimental must be named to be installed
 ```
 
-The build checks every `.json` / `.mcmeta` file with `jq` first. The game itself skips broken files without saying so. `dist/` is rebuilt every run and committed (except the Experimental zip), because the server downloads the pack zips from a pinned commit — edit `datapacks/` and `resourcepack/`, never `dist/`, and commit the rebuilt `dist/` with your change.
+The build checks every `.json` / `.mcmeta` file with `jq` first. That only catches malformed JSON: in 26.3 a recipe or advancement with bad contents stops the server from starting (recover with `--safeMode`), and a broken function just logs an error and is skipped. `dist/` is rebuilt every run and committed (except the Experimental zip), because the server downloads the pack zips from a pinned commit — edit `datapacks/` and `resourcepack/`, never `dist/`, and commit the rebuilt `dist/` with your change.
 
 ## Install
 

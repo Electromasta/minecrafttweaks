@@ -12,7 +12,7 @@ dist="$root/dist"
 name="minecrafttweaks"
 server_packs=(drops chop_tree equipment)
 
-# Fail early on malformed JSON - Minecraft just logs and skips broken files.
+# Fail early on malformed JSON - a broken recipe or advancement stops the server from starting.
 status=0
 while IFS= read -r -d '' f; do
   if ! jq empty "$f" 2>/dev/null; then

@@ -1,0 +1,44 @@
+# A data pack can't change an item's default components, so loot and mob drops get their durability when picked up
+# Revoked so the advancement can fire on the next inventory change. It only matches vanilla durability, so this can't loop
+advancement revoke @s only minecrafttweaks:durability/vanilla_item
+item modify entity @s container.0 minecrafttweaks:durability
+item modify entity @s container.1 minecrafttweaks:durability
+item modify entity @s container.2 minecrafttweaks:durability
+item modify entity @s container.3 minecrafttweaks:durability
+item modify entity @s container.4 minecrafttweaks:durability
+item modify entity @s container.5 minecrafttweaks:durability
+item modify entity @s container.6 minecrafttweaks:durability
+item modify entity @s container.7 minecrafttweaks:durability
+item modify entity @s container.8 minecrafttweaks:durability
+item modify entity @s container.9 minecrafttweaks:durability
+item modify entity @s container.10 minecrafttweaks:durability
+item modify entity @s container.11 minecrafttweaks:durability
+item modify entity @s container.12 minecrafttweaks:durability
+item modify entity @s container.13 minecrafttweaks:durability
+item modify entity @s container.14 minecrafttweaks:durability
+item modify entity @s container.15 minecrafttweaks:durability
+item modify entity @s container.16 minecrafttweaks:durability
+item modify entity @s container.17 minecrafttweaks:durability
+item modify entity @s container.18 minecrafttweaks:durability
+item modify entity @s container.19 minecrafttweaks:durability
+item modify entity @s container.20 minecrafttweaks:durability
+item modify entity @s container.21 minecrafttweaks:durability
+item modify entity @s container.22 minecrafttweaks:durability
+item modify entity @s container.23 minecrafttweaks:durability
+item modify entity @s container.24 minecrafttweaks:durability
+item modify entity @s container.25 minecrafttweaks:durability
+item modify entity @s container.26 minecrafttweaks:durability
+item modify entity @s container.27 minecrafttweaks:durability
+item modify entity @s container.28 minecrafttweaks:durability
+item modify entity @s container.29 minecrafttweaks:durability
+item modify entity @s container.30 minecrafttweaks:durability
+item modify entity @s container.31 minecrafttweaks:durability
+item modify entity @s container.32 minecrafttweaks:durability
+item modify entity @s container.33 minecrafttweaks:durability
+item modify entity @s container.34 minecrafttweaks:durability
+item modify entity @s container.35 minecrafttweaks:durability
+item modify entity @s armor.head minecrafttweaks:durability
+item modify entity @s armor.chest minecrafttweaks:durability
+item modify entity @s armor.legs minecrafttweaks:durability
+item modify entity @s armor.feet minecrafttweaks:durability
+item modify entity @s weapon.offhand minecrafttweaks:durability

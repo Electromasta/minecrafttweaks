@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:cow_spawn_egg"
+  },
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "id": "minecraft:leather_leggings",
+    "components": {
+      "minecraft:item_name": "Direhide Leggings",
+      "minecraft:max_damage": 300,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "amount": 5,
+          "id": "minecrafttweaks:direhide.armor.legs",
+          "operation": "add_value",
+          "slot": "legs"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 1,
+          "id": "minecrafttweaks:direhide.toughness.legs",
+          "operation": "add_value",
+          "slot": "legs"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "minecraft:cow_spawn_egg"
+      }
+    }
+  }
+}
