@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": "#minecraft:warped_stems",
+    "o": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "WoW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "id": "minecraft:shield",
+    "components": {
+      "minecraft:item_name": "Warped Shield",
+      "minecraft:max_damage": 1008,
+      "minecraft:repairable": {
+        "items": "#minecraft:warped_stems"
+      }
+    }
+  }
+}

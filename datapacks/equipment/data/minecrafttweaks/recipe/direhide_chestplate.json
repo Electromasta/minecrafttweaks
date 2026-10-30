@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:cow_spawn_egg"
+  },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "id": "minecraft:leather_chestplate",
+    "components": {
+      "minecraft:item_name": "Direhide Chestplate",
+      "minecraft:max_damage": 320,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "amount": 6,
+          "id": "minecrafttweaks:direhide.armor.chest",
+          "operation": "add_value",
+          "slot": "chest"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 1,
+          "id": "minecrafttweaks:direhide.toughness.chest",
+          "operation": "add_value",
+          "slot": "chest"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "minecraft:cow_spawn_egg"
+      }
+    }
+  }
+}

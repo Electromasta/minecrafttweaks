@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:cow_spawn_egg"
+  },
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "result": {
+    "id": "minecraft:leather_helmet",
+    "components": {
+      "minecraft:item_name": "Direhide Helmet",
+      "minecraft:max_damage": 220,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "amount": 2,
+          "id": "minecrafttweaks:direhide.armor.head",
+          "operation": "add_value",
+          "slot": "head"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 1,
+          "id": "minecrafttweaks:direhide.toughness.head",
+          "operation": "add_value",
+          "slot": "head"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "minecraft:cow_spawn_egg"
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "criteria": {
+    "leather_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_helmet",
+            "components": {
+              "minecraft:max_damage": 55
+            }
+          }
+        ]
+      }
+    },
+    "leather_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_chestplate",
+            "components": {
+              "minecraft:max_damage": 80
+            }
+          }
+        ]
+      }
+    },
+    "leather_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_leggings",
+            "components": {
+              "minecraft:max_damage": 75
+            }
+          }
+        ]
+      }
+    },
+    "leather_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_boots",
+            "components": {
+              "minecraft:max_damage": 65
+            }
+          }
+        ]
+      }
+    },
+    "golden_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_helmet",
+            "components": {
+              "minecraft:max_damage": 77
+            }
+          }
+        ]
+      }
+    },
+    "golden_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_chestplate",
+            "components": {
+              "minecraft:max_damage": 112
+            }
+          }
+        ]
+      }
+    },
+    "golden_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_leggings",
+            "components": {
+              "minecraft:max_damage": 105
+            }
+          }
+        ]
+      }
+    },
+    "golden_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_boots",
+            "components": {
+              "minecraft:max_damage": 91
+            }
+          }
+        ]
+      }
+    },
+    "golden_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_sword",
+            "components": {
+              "minecraft:max_damage": 32
+            }
+          }
+        ]
+      }
+    },
+    "golden_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_pickaxe",
+            "components": {
+              "minecraft:max_damage": 32
+            }
+          }
+        ]
+      }
+    },
+    "golden_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_axe",
+            "components": {
+              "minecraft:max_damage": 32
+            }
+          }
+        ]
+      }
+    },
+    "golden_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_shovel",
+            "components": {
+              "minecraft:max_damage": 32
+            }
+          }
+        ]
+      }
+    },
+    "golden_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_hoe",
+            "components": {
+              "minecraft:max_damage": 32
+            }
+          }
+        ]
+      }
+    },
+    "golden_spear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_spear",
+            "components": {
+              "minecraft:max_damage": 32
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "leather_helmet",
+      "leather_chestplate",
+      "leather_leggings",
+      "leather_boots",
+      "golden_helmet",
+      "golden_chestplate",
+      "golden_leggings",
+      "golden_boots",
+      "golden_sword",
+      "golden_pickaxe",
+      "golden_axe",
+      "golden_shovel",
+      "golden_hoe",
+      "golden_spear"
+    ]
+  ],
+  "rewards": {
+    "function": "minecrafttweaks:durability/apply"
+  }
+}

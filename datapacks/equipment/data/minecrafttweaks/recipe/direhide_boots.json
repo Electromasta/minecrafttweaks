@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:cow_spawn_egg"
+  },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "id": "minecraft:leather_boots",
+    "components": {
+      "minecraft:item_name": "Direhide Boots",
+      "minecraft:max_damage": 260,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:armor",
+          "amount": 2,
+          "id": "minecrafttweaks:direhide.armor.feet",
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "type": "minecraft:armor_toughness",
+          "amount": 1,
+          "id": "minecrafttweaks:direhide.toughness.feet",
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
+      "minecraft:repairable": {
+        "items": "minecraft:cow_spawn_egg"
+      }
+    }
+  }
+}

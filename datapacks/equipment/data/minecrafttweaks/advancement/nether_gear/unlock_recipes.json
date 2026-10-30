@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "has_nether_stem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crimson_stem",
+              "minecraft:stripped_crimson_stem",
+              "minecraft:crimson_hyphae",
+              "minecraft:stripped_crimson_hyphae",
+              "minecraft:warped_stem",
+              "minecraft:stripped_warped_stem",
+              "minecraft:warped_hyphae",
+              "minecraft:stripped_warped_hyphae"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "minecrafttweaks:crimson_bow",
+      "minecrafttweaks:crimson_shield",
+      "minecrafttweaks:warped_bow",
+      "minecrafttweaks:warped_shield"
+    ]
+  }
+}

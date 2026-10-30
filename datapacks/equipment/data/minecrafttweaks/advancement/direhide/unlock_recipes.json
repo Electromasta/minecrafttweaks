@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "has_dire_hide": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cow_spawn_egg"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "minecrafttweaks:direhide_helmet",
+      "minecrafttweaks:direhide_chestplate",
+      "minecrafttweaks:direhide_leggings",
+      "minecrafttweaks:direhide_boots"
+    ]
+  }
+}
