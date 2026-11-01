@@ -4,7 +4,7 @@ Vanilla+ Minecraft datapacks for **Java Edition 26.3**. Each pack works on its o
 
 | Pack | Folder | What it changes |
 |---|---|---|
-| Drops | `datapacks/drops/` | Mob and block drops, player-kill rules, mob stats, gunpowder recipe |
+| Drops | `datapacks/drops/` | Mob and block drops, mob stats, gunpowder recipe |
 | Chop Tree | `datapacks/chop_tree/` | Top-down tree chopping |
 | Equipment | `datapacks/equipment/` | Armor and tool changes |
 | Experimental | `datapacks/experimental/` | Features being tested locally, never installed on the server |
@@ -29,10 +29,6 @@ Vanilla+ Minecraft datapacks for **Java Edition 26.3**. Each pack works on its o
 | Ender Dragon | nothing | **16–32 bone blocks** beside the exit portal (player kill, every kill) | Big mobs leave big bones |
 | Giant | nothing | **8–16 bone blocks** | Giants only exist if summoned |
 | Zombie-types (9 mobs) | rotten flesh | rotten flesh that is **compostable** (50%/item) | Gives flesh a use |
-
-### Player-kill-only drops
-
-Valuable drops need a player to get the kill, so fully automatic farms stop producing them.   Small automatic farms are fine, big ones cause lag for other servers.
 
 ### Block drops
 
@@ -106,7 +102,7 @@ Data packs can't add new items, so Dire Hide is a cow spawn egg with its mob dat
 - **Recipes:** they unlock in the recipe book when you get your first Dire Hide. The book shows a cow egg as the ingredient, because recipes can't display custom items.
 - **Repairing:** Dire Hide repairs Direhide armor at an anvil. Plain leather doesn't.
 - **No crafting grid repair:** this pack removes the recipe that combines two damaged items in a crafting grid, for all items, because it would turn Direhide into plain leather armor. Use an anvil instead.
-- **Drops are in this pack:** the hoglin and ravager loot tables live here so the hide comes with the armor. That includes the ravager's saddle needing a player kill, so without this pack ravagers drop vanilla saddles.
+- **Drops are in this pack:** the hoglin and ravager loot tables live here so the hide comes with the armor.
 
 ### Crimson and warped gear
 
